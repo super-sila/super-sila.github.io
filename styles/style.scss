@@ -15,6 +15,7 @@ body {
 .header {
   height: 110px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -52,5 +53,74 @@ body {
   &__text {
     margin-top: 20px;
     text-align: justify;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  .center {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .post {
+    &__img {
+      width: 550px;
+    }
+  }
+}
+
+@media (min-width: 321px) and (max-width: 767px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-bottom: 100px;
+  }
+  .center {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .top {
+    &__content {
+      padding-top: 20px;
+      height: 150px;
+    }
+  }
+
+  .post {
+    &__img {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .center {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .top {
+    &__content {
+      padding-top: 20px;
+      height: 150px;
+    }
+  }
+
+  .post {
+    &__img {
+      width: 250px;
+    }
   }
 }
