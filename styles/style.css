@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+.header__logo {
+  width: 100px;
+  height: 66px;
+  color: red;
+}
+
+.top__content {
+  background-image: url(../imgages/jpg/metal_back.jpg);
+  height: 110px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.conteiner__post {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.post__text {
+  margin-top: 20px;
+  text-align: justify;
+}/*# sourceMappingURL=style.css.map */
