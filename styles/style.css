@@ -5,11 +5,53 @@
 
 body {
   background-color: rgba(230, 230, 230, 0.863);
+  font-size: 24px;
+}
+
+.box {
+  box-sizing: border-box;
+  display: block;
+  padding: 5px;
 }
 
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+}
+
+.conteiner {
+  text-align: center;
+}
+.conteiner__title {
+  color: #be2f2f;
+  margin-bottom: 50px;
+}
+.conteiner__subTitle {
+  margin-bottom: 20px;
+}
+.conteiner__text {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.conteiner__text_bolid {
+  font-weight: bold;
+}
+.conteiner__text_border {
+  border: 3px solid black;
+}
+.conteiner__text_ul {
+  text-align: start;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.color__red {
+  color: #be2f2f;
+  margin-bottom: 20px;
+}
+
+.footer {
+  height: 110px;
 }
 
 .header {
@@ -27,25 +69,49 @@ body {
   color: red;
 }
 
+.img {
+  display: block;
+  height: 35%;
+  width: 35%;
+  margin-bottom: 30px;
+}
+
+.key_figures {
+  display: flex;
+}
+.key_figures__text {
+  margin-right: 20px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 14px;
+}
+.link:visited {
+  color: black;
+}
+.link:hover {
+  color: #be2f2f;
+}
+
+.rightimg {
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+
+.text__left {
+  text-align: start;
+}
+.text_underline {
+  text-decoration: underline;
+}
+
 .top__content {
   background-color: white;
   height: 110px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.conteiner__post {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.post__text {
-  margin-top: 20px;
-  text-align: justify;
 }
 
 @media (min-width: 768px) and (max-width: 833px) {
@@ -58,9 +124,6 @@ body {
   .center {
     padding-left: 50px;
     padding-right: 50px;
-  }
-  .post__img {
-    width: 550px;
   }
 }
 @media (min-width: 321px) and (max-width: 767px) {
@@ -79,9 +142,6 @@ body {
     padding-top: 20px;
     height: 150px;
   }
-  .post__img {
-    width: 300px;
-  }
 }
 @media (max-width: 320px) {
   .center {
@@ -91,8 +151,5 @@ body {
   .top__content {
     padding-top: 20px;
     height: 150px;
-  }
-  .post__img {
-    width: 250px;
   }
 }/*# sourceMappingURL=style.css.map */

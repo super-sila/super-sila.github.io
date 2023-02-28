@@ -5,11 +5,61 @@
 
 body {
   background-color: rgba(230, 230, 230, 0.863);
+  font-size: 24px;
+}
+
+.box {
+  box-sizing: border-box;
+  display: block;
+  padding: 5px;
 }
 
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+}
+
+.conteiner {
+  text-align: center;
+
+  &__title {
+    color: #be2f2f;
+    margin-bottom: 50px;
+  }
+
+  &__subTitle {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    text-align: justify;
+    margin-bottom: 20px;
+
+    &_bolid {
+      font-weight: bold;
+    }
+
+    &_border {
+      border: 3px solid black;
+    }
+
+    &_ul {
+      text-align: start;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.color {
+  &__red {
+    color: #be2f2f;
+    margin-bottom: 20px;
+  }
+}
+
+.footer {
+  height: 110px;
 }
 
 .header {
@@ -28,6 +78,48 @@ body {
   }
 }
 
+.img {
+  display: block;
+  height: 35%;
+  width: 35%;
+  margin-bottom: 30px;
+}
+
+.key_figures {
+  display: flex;
+
+  &__text {
+    margin-right: 20px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  font-size: 14px;
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    color: #be2f2f;
+  }
+}
+
+.rightimg {
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+
+.text {
+  &__left {
+    text-align: start;
+  }
+
+  &_underline {
+    text-decoration: underline;
+  }
+}
+
 .top {
   &__content {
     // background-image: url(../images/jpg/metal_back.jpg);
@@ -36,23 +128,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
-}
-
-.conteiner {
-  &__post {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-}
-
-.post {
-  &__text {
-    margin-top: 20px;
-    text-align: justify;
   }
 }
 
@@ -69,12 +144,6 @@ body {
   .center {
     padding-left: 50px;
     padding-right: 50px;
-  }
-
-  .post {
-    &__img {
-      width: 550px;
-    }
   }
 }
 
@@ -97,12 +166,6 @@ body {
       height: 150px;
     }
   }
-
-  .post {
-    &__img {
-      width: 300px;
-    }
-  }
 }
 
 @media (max-width: 320px) {
@@ -115,12 +178,6 @@ body {
     &__content {
       padding-top: 20px;
       height: 150px;
-    }
-  }
-
-  .post {
-    &__img {
-      width: 250px;
     }
   }
 }
